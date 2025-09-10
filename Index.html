@@ -3,54 +3,67 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Cartoon Face</title>
+    <title>Anime Face</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f8ff;
+            background: #f9f9f9;
         }
         .face {
-            width: 200px;
-            height: 200px;
-            background: #ffcc80;
-            border-radius: 50%;
+            width: 220px;
+            height: 250px;
+            background: #ffe0bd;
+            border-radius: 50% 50% 45% 45%;
             position: relative;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         .eye {
-            width: 40px;
-            height: 40px;
-            background: #000;
+            width: 60px;
+            height: 80px;
+            background: radial-gradient(circle at 30% 30%, #fff, #ccc);
+            border: 4px solid #000;
             border-radius: 50%;
             position: absolute;
             top: 60px;
+            overflow: hidden;
         }
         .eye.left {
-            left: 50px;
+            left: 30px;
         }
         .eye.right {
-            right: 50px;
+            right: 30px;
         }
-        .smile {
-            width: 100px;
-            height: 50px;
-            border-bottom: 5px solid #000;
+        .pupil {
+            width: 20px;
+            height: 20px;
+            background: #000;
+            border-radius: 50%;
+            position: absolute;
+            top: 25px;
+            left: 20px;
+        }
+        .blush {
+            width: 30px;
+            height: 15px;
+            background: #ff99cc;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 60px;
+        }
+        .blush.left {
+            left: 40px;
+        }
+        .blush.right {
+            right: 40px;
+        }
+        .mouth {
+            width: 60px;
+            height: 20px;
+            border-bottom: 4px solid #000;
             border-radius: 0 0 50px 50px;
             position: absolute;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    </style>
-</head>
-<body>
-    <div class="face">
-        <div class="eye left"></div>
-        <div class="eye right"></div>
-        <div class="smile"></div>
-    </div>
-</body>
-</html>
+            bottom: 40px;
+            left: 50
